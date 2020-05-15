@@ -1,0 +1,20 @@
+﻿Microsoft Windows [Version 10.0.17134.765]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2018. Все права защищены.
+
+C:\Users\vasil>heroku login
+
+C:\Users\vasil>cd C:\TELEBOT\Kaluga_sbs_bot
+
+C:\TELEBOT\Kaluga_sbs_bot>git init
+
+C:\TELEBOT\Kaluga_sbs_bot>heroku git:remote -a powerful-scrubland-42210
+
+C:\TELEBOT\Kaluga_sbs_bot>git add .
+
+C:\TELEBOT\Kaluga_sbs_bot>git commit -am "make it better"
+
+C:\TELEBOT\Kaluga_sbs_bot>git push heroku master
+
+C:\TELEBOT\Kaluga_sbs_bot>heroku ps:scale worker=1
+
+C:\TELEBOT\Kaluga_sbs_bot>

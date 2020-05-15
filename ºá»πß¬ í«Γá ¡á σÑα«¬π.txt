@@ -1,0 +1,181 @@
+Microsoft Windows [Version 10.0.17134.765]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2018. Все права защищены.
+
+C:\Users\vasil>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/f048ad63-3163-4164-ac18-e69e1a04b386
+Logging in... done
+Logged in as vasiliybologov@gmail.com
+
+C:\Users\vasil>cd my-project/
+Системе не удается найти указанный путь.
+
+C:\Users\vasil>heroku create
+Creating app... done, ⬢ powerful-scrubland-42210
+https://powerful-scrubland-42210.herokuapp.com/ | https://git.heroku.com/powerful-scrubland-42210.git
+
+C:\Users\vasil>git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\vasil>git commit -am "make it better"
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\vasil>git add https://git.heroku.com/powerful-scrubland-42210.git
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\vasil>git add C:\TELEBOT\Kaluga_sbs_bot
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\vasil>cd C:\TELEBOT\Kaluga_sbs_bot
+
+C:\TELEBOT\Kaluga_sbs_bot>git push heroku master
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\TELEBOT\Kaluga_sbs_bot>heroku keys:add
+Found an SSH public key at C:\Users\vasil\.ssh\id_rsa.pub
+? Would you like to upload it to Heroku? Yes
+Uploading C:\Users\vasil\.ssh\id_rsa.pub SSH key... done
+
+C:\TELEBOT\Kaluga_sbs_bot>git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\TELEBOT\Kaluga_sbs_bot>cd C:\TELEBOT\Kaluga_sbs_bot
+
+C:\TELEBOT\Kaluga_sbs_bot>git init
+Initialized empty Git repository in C:/TELEBOT/Kaluga_sbs_bot/.git/
+
+C:\TELEBOT\Kaluga_sbs_bot>heroku git:remote -a powerful-scrubland-42210
+set git remote heroku to https://git.heroku.com/powerful-scrubland-42210.git
+
+C:\TELEBOT\Kaluga_sbs_bot>git add .
+
+C:\TELEBOT\Kaluga_sbs_bot>git commit -am "make it better"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'vasil@LAPTOP-P1URR3ME.(none)')
+
+C:\TELEBOT\Kaluga_sbs_bot>git push heroku master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://git.heroku.com/powerful-scrubland-42210.git'
+
+C:\TELEBOT\Kaluga_sbs_bot>git commit -am "make it better"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'vasil@LAPTOP-P1URR3ME.(none)')
+
+C:\TELEBOT\Kaluga_sbs_bot>Omit --global
+"Omit" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\TELEBOT\Kaluga_sbs_bot>git config --global user.email vasiliybologov@gmail.com
+
+C:\TELEBOT\Kaluga_sbs_bot>git config --global user.name VasiliyBologov
+
+C:\TELEBOT\Kaluga_sbs_bot>git commit -am "make it better"
+[master (root-commit) 67423c9] make it better
+ 4 files changed, 50 insertions(+)
+ create mode 100644 Procfile
+ create mode 100644 TELEBOT_sbs_kaluga.py
+ create mode 100644 requirements.txt
+ create mode 100644 run.bat
+
+C:\TELEBOT\Kaluga_sbs_bot>git push heroku master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.10 KiB | 224.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.8
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting appdirs==1.4.3 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 1))
+remote:          Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+remote:        Collecting certifi==2018.1.18 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 2))
+remote:          Downloading https://files.pythonhosted.org/packages/fa/53/0a5562e2b96749e99a3d55d8c7df91c9e4d8c39a9da1f1a49ac9e4f4b39f/certifi-2018.1.18-py2.py3-none-any.whl (151kB)
+remote:        Collecting Cython==0.23 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 3))
+remote:          Downloading https://files.pythonhosted.org/packages/6a/91/d417a732e958b0f6f3d415d35915634120dc6c4707dca08a78322e29e72d/Cython-0.23.tar.gz (1.6MB)
+remote:        Collecting Django==1.10.6 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 4))
+remote:          Downloading https://files.pythonhosted.org/packages/b9/bb/723f78e6f6aea78590331eba4e42b8a09c33ce154204a942525a91101d0b/Django-1.10.6-py2.py3-none-any.whl (6.8MB)
+remote:        Collecting docutils==0.13.1 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 5))
+remote:          Downloading https://files.pythonhosted.org/packages/7c/30/8fb30d820c012a6f701a66618ce065b6d61d08ac0a77e47fc7808dbaee47/docutils-0.13.1-py3-none-any.whl (536kB)
+remote:        Collecting packaging==16.8 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 6))
+remote:          Downloading https://files.pythonhosted.org/packages/87/1b/c39b7c65b5612812b83d6cab7ef2885eac9f6beb0b7b8a7071a186aea3b1/packaging-16.8-py2.py3-none-any.whl
+remote:        Collecting pipenv==11.8.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 7))
+remote:          Downloading https://files.pythonhosted.org/packages/b0/de/81e0de0f9d0fb91d3347dada50d7d25eef9c1d170143aa8172c74310b440/pipenv-11.8.0.tar.gz (5.0MB)
+remote:        Collecting psutil==5.0.1 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 8))
+remote:          Downloading https://files.pythonhosted.org/packages/d9/c8/8c7a2ab8ec108ba9ab9a4762c5a0d67c283d41b13b5ce46be81fdcae3656/psutil-5.0.1.tar.gz (326kB)
+remote:        Collecting pyowm==2.8.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 9))
+remote:          Downloading https://files.pythonhosted.org/packages/bd/0a/42b9ab893ec6436914e2d56321fc1d63ff2dc95cc97d653a064598887c71/pyowm-2.8.0-py3-none-any.whl (3.7MB)
+remote:        Collecting Pygments==2.2.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 10))
+remote:          Downloading https://files.pythonhosted.org/packages/02/ee/b6e02dc6529e82b75bb06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl (841kB)
+remote:        Collecting pyparsing==2.2.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 11))
+remote:          Downloading https://files.pythonhosted.org/packages/6a/8a/718fd7d3458f9fab8e67186b00abdd345b639976bc7fb3ae722e1b026a50/pyparsing-2.2.0-py2.py3-none-any.whl (56kB)
+remote:        Collecting pyTelegramBotAPI==3.6.1 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 12))
+remote:          Downloading https://files.pythonhosted.org/packages/a5/74/a6853c290b363535bed125928c752c92b1e9fe32fdb8ec83085c17420055/pyTelegramBotAPI-3.6.1.tar.gz (52kB)
+remote:        Collecting python-telegram-bot==7.0.1 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 13))
+remote:          Downloading https://files.pythonhosted.org/packages/ca/5e/97bd723e8a70be8d61a3e5a35d238d1ad6c6a8e99df2383b77a0cdf76833/python_telegram_bot-7.0.1-py2.py3-none-any.whl (290kB)
+remote:        Collecting requests==2.13.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 14))
+remote:          Downloading https://files.pythonhosted.org/packages/7e/ac/a80ed043485a3764053f59ca92f809cc8a18344692817152b0e8bd3ca891/requests-2.13.0-py2.py3-none-any.whl (584kB)
+remote:        Collecting six==1.10.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 15))
+remote:          Downloading https://files.pythonhosted.org/packages/c8/0a/b6723e1bc4c516cb687841499455a8505b44607ab535be01091c0f24f079/six-1.10.0-py2.py3-none-any.whl
+remote:        Collecting virtualenv==15.1.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 16))
+remote:          Downloading https://files.pythonhosted.org/packages/6f/86/3dc328ee7b1a6419ebfac7896d882fba83c48e3561d22ddddf38294d3e83/virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB)
+remote:        Collecting virtualenv-clone==0.3.0 (from -r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 17))
+remote:          Downloading https://files.pythonhosted.org/packages/6d/c2/dccb5ccf599e0c5d1eea6acbd058af7a71384f9740179db67a9182a24798/virtualenv_clone-0.3.0-py2.py3-none-any.whl
+remote:        Collecting future>=0.16.0 (from python-telegram-bot==7.0.1->-r /tmp/build_053901c04c86beecfffaf8b963ec53d7/requirements.txt (line 13))
+remote:          Downloading https://files.pythonhosted.org/packages/90/52/e20466b85000a181e1e144fd8305caf2cf475e2f9674e797b222f8105f5f/future-0.17.1.tar.gz (829kB)
+remote:        Installing collected packages: appdirs, certifi, Cython, Django, docutils, pyparsing, six, packaging, virtualenv, virtualenv-clone, pipenv, psutil, requests, pyowm, Pygments, pyTelegramBotAPI, future, python-telegram-bot
+remote:          Running setup.py install for Cython: started
+remote:            Running setup.py install for Cython: still running...
+remote:            Running setup.py install for Cython: finished with status 'done'
+remote:          Running setup.py install for pipenv: started
+remote:            Running setup.py install for pipenv: finished with status 'done'
+remote:          Running setup.py install for psutil: started
+remote:            Running setup.py install for psutil: finished with status 'done'
+remote:          Running setup.py install for pyTelegramBotAPI: started
+remote:            Running setup.py install for pyTelegramBotAPI: finished with status 'done'
+remote:          Running setup.py install for future: started
+remote:            Running setup.py install for future: finished with status 'done'
+remote:        Successfully installed Cython-0.23 Django-1.10.6 Pygments-2.2.0 appdirs-1.4.3 certifi-2018.1.18 docutils-0.13.1 future-0.17.1 packaging-16.8 pipenv-11.8.0 psutil-5.0.1 pyTelegramBotAPI-3.6.1 pyowm-2.8.0 pyparsing-2.2.0 python-telegram-bot-7.0.1 requests-2.13.0 six-1.10.0 virtualenv-15.1.0 virtualenv-clone-0.3.0
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> worker
+remote:
+remote: -----> Compressing...
+remote:        Done: 73.9M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://powerful-scrubland-42210.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/powerful-scrubland-42210.git
+ * [new branch]      master -> master
+
+C:\TELEBOT\Kaluga_sbs_bot>heroku ps:scale worker=1
+Scaling dynos... done, now running worker at 1:Free
+
+C:\TELEBOT\Kaluga_sbs_bot>

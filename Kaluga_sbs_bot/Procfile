@@ -1,0 +1,1 @@
+worker: python TELEBOT_sbs_kaluga.py $PORT
